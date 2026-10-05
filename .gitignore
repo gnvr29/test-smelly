@@ -1,3 +1,7 @@
 node_modules/
 coverage/
 package-lock.json
+.kiro
+.github
+.claude
+.appsec
