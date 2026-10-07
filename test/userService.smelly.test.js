@@ -37,6 +37,7 @@ describe('UserService - Suíte de Testes com Smells', () => {
     const todosOsUsuarios = [usuarioComum, usuarioAdmin];
 
     // O teste tem um loop e um if, tornando-o complexo e menos claro.
+    // TEST SMELL: lógica condicional no teste
     for (const user of todosOsUsuarios) {
       const resultado = userService.deactivateUser(user.id);
       if (!user.isAdmin) {
