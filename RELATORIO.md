@@ -163,27 +163,9 @@ Comando executado na primeira análise, depois de instalar `eslint@8.57.1` e `es
 npx eslint test src
 ```
 
-Saída (inclua aqui o **print do seu terminal** com este resultado):
+Saída da primeira execução no arquivo `userService.smelly.test.js` (o `clean.test.js` ainda era uma cópia idêntica e gerou os mesmos 6 problemas):
 
-```
-test/userService.clean.test.js   (versão original, cópia do smelly)
-  44:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  46:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  49:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  73:7  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  77:3  warning  Disabled test                          jest/no-disabled-tests
-  77:3  warning  Test has no assertions                 jest/expect-expect
-
-test/userService.smelly.test.js
-  45:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  47:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  50:9  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  74:7  error    Avoid calling `expect` conditionally   jest/no-conditional-expect
-  78:3  warning  Disabled test                          jest/no-disabled-tests
-  78:3  warning  Test has no assertions                 jest/expect-expect
-
-✖ 12 problems (8 errors, 4 warnings)
-```
+![Saída do ESLint na primeira execução, mostrando 4 erros e 2 warnings em userService.smelly.test.js](terminal.png)
 
 ### Comparação com a análise manual
 

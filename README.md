@@ -25,6 +25,6 @@ Siga os passos abaixo para preparar seu ambiente de trabalho.
 **1. Clone o repositório:**
 
 ```bash
-git clone [URL_DO_SEU_FORK_DO_REPOSITORIO]
+git clone https://github.com/gnvr29/test-smelly.git
 cd test-smelly
 ```
